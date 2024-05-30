@@ -7,6 +7,10 @@ import Home from "./pages";
 import Faq from "./pages/faq";
 import Contact from "./pages/contact";
 
+import Tahun from "./pages/LOWPAGE/tahun";
+import Kategori1 from "./pages/LOWPAGE/kategori1";
+import Subkategori1 from "./pages/LOWPAGE/subkategori1";
+
 
 const router = createBrowserRouter([
   {
@@ -20,6 +24,18 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <Contact />
+  },
+  {
+    path: "/tahun",
+    element: <Tahun />
+  },
+  {
+    path: "/kategori1",
+    element: <Kategori1 />
+  },
+  {
+    path: "/sub1",
+    element: <Subkategori1 />
   }
 ]);
 

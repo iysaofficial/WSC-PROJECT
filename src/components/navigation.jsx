@@ -63,6 +63,7 @@ const Navigation = () => {
                         <a href="#" className="nav-menu-item"><i className="fas fa-building me-3"></i>About Us</a>
                         <a href="/faq" className="nav-menu-item"><i className="fas fa-file-alt me-3"></i>FAQ</a>
                         <a href="/contact" className="nav-menu-item"><i className="fas fa-phone me-3"></i>Contact</a>
+                        <a href="/tahun" className="nav-menu-item"><i className="fas fa-book me-3"></i>List Of Winner</a>
 
                         {/* NAVIGASI DROPDOWN */}
                         {/* <a href="#" className="nav-menu-item" onClick={toggleWinners}><i className="fas fa-search me-3"></i>List of Winners</a>
