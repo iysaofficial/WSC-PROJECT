@@ -2,13 +2,13 @@ import React from "react";
 
 const compcontact = () => {
   return (
-    <section className="contact-section bg-light py-3 py-md-5 py-xl-8">
+    <section className="contact-section py-3 py-md-5 py-xl-8">
       <div className="container">
         <div className="text-center">
-          <h2 className="section-heading text-uppercase mb-5">Contact Us</h2>
+          <h2 className="section-heading text-uppercase mb-5 fw-bold">Contact Us</h2>
         </div>
         <form
-          action="https://formspree.io/f/xleqbela"
+          action="https://formspree.io/f/xqkrvzwk"
           method="POST"
           id="contactForm"
           data-sb-form-api-token="API_TOKEN"

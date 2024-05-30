@@ -165,13 +165,11 @@ select.noStyle {
 }
 
 .mainhero-section .wrapper .left {
-  background-image: url('/assets/img/WEBSITEFIX.png');
-  /* background-position: initial; */
   background-size: cover;
 }
 
 .mainhero-section .wrapper .left img{
-  max-width: 95%;
+  max-width: 100%;
 }
 
 .mainhero-section .wrapper .right {
@@ -277,36 +275,54 @@ select.noStyle {
 
 /* Category Start */ /* Category Start */
 .category-section {
-  padding: 100px 25px 75px 25px  ;
-  /* background-color: var(--warna-sekunder); */
+  padding: 100px 25px 75px 25px;
+  background-color: var(--warna-primary); 
 }
 
-.category-section .cat-item {
-  color: var(--warna-sekunder);
+.category-section .wrapper {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 1rem;
+  justify-content: center;
 }
-.category-section .cat-item .btn{
+
+.category-section .box {
+  background-color: #06091d40;
+  border: 3px solid var(--warna-sekunder);
+  text-align: center;
+  border-radius: 10px;
+  flex: 1 1 calc(20% - 1rem); /* Mengatur elemen untuk mengambil 50% dari lebar container dikurangi gap */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.category-section .box i{
   color: var(--warna-tulisan);
-  background-color: var(--warna-sekunder);
+  filter: drop-shadow(10px 7px 5px var(--warna-sekunder));
 }
 
-.category-section .modal-body {
-  text-align: justify;
+@media (max-width: 768px) {
+  .category-section .box {
+      flex: 1 1 100%; /* Mengatur elemen untuk mengambil lebar penuh pada layar kecil */
+  }
 }
 /* Category End */ /* Category End */
 
 /* Contact Start */ /* Contact Start */
 .contact-section {
-  /* background-color: var(--warna-primary); */
+  background-color: var(--warna-primary);
   padding: 0px 25px 75px 25px  ;
-
 }
 
+.contact-section .form-group{
+  margin: 10px;
+}
 .contact-section .btn{
   color: var(--warna-tulisan2);
   background-color: var(--warna-sekunder);
 }
 .contact-section .section-heading {
-  color: var(--warna-tulisan2);
+  color: var(--warna-tulisan);
 }
 .contact-section form#contactForm .form-group {
   margin-bottom: 1.5rem;
@@ -363,77 +379,6 @@ select.noStyle {
 /* Contact End */ /* Contact End */
 
 
-/* Organized Start */ /* Organized Start */
-.organized-section {
-  padding: 100px 25px 75px 25px  ;
-  /* background-image: url('public\assets\img\web.jpg'); */
-  background-image: url(../../../public/assets/img/web.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-@media (max-width: 991px){
-  .organized-section {
-    background: var(--warna-primary);
-    background-image: none;
-  }
-}
-
-.organized-section .content {
-  padding: 7rem 0; }
-
-.organized-section h1 {
-  color: var(--warna-tulisan2);   
-}
-
-.organized-section .bg-left-half {
-  position: relative; }
-
-.organized-section .bg-left-half:before {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    z-index: -1;
-    content: "";
-    left: 0;
-    top: 0;
- }
-
-.organized-section .content-image img {
-  margin-bottom: 20px; 
-  border-radius: 10px;
-}
-
-.organized-section .content-image h3 {
-  font-size: 18px;
-  font-weight: 900 !important; }
-  .organized-section .content-image h3 a {
-    color: var(--warna-tulisan2); }
-
-.organized-section .owl-2-style .owl-nav {
-  display: none; }
-
-.organized-section .owl-2-style .owl-dots {
-  text-align: center;
-  position: relative;
-  bottom: -30px; }
-  .organized-section .owl-2-style .owl-dots .owl-dot {
-    display: inline-block; }
-    .organized-section .owl-2-style .owl-dots .owl-dot span {
-      display: inline-block;
-      width: 15px;
-      height: 3px;
-      border-radius: 0px;
-      background: #cccccc;
-      -webkit-transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
-      -o-transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
-      transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
-      margin: 3px; }
-    .organized-section .owl-2-style .owl-dots .owl-dot.active span {
-      background: #007bff; }
-    .organized-section .owl-2-style .owl-dots .owl-dot:active, .owl-2-style .owl-dots .owl-dot:focus {
-      outline: none; }
-/* Organized End */ /* Organized End */
 
 /* FAQ Start */ /* FAQ Start */
 
@@ -465,12 +410,18 @@ select.noStyle {
   min-height: 100vh;
 }
 
+.faq-section .faq {
+  border: 5px solid var(--warna-primary);
+  border-radius: 10px;
+}
+
 .faq-title h2 {
   position: relative;
   margin-bottom: 45px;
   display: inline-block;
   font-weight: 600;
   line-height: 1;
+  color: var(--warna-tulisan2);
 }
 
 .faq-title h2::before {
@@ -561,6 +512,7 @@ select.noStyle {
 
 .faq .card .card-body p {
   margin-bottom: 14px;
+  color: var(--warna-tulisan2);
 }
 
 @media (max-width: 991px) {

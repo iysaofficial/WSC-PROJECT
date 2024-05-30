@@ -4,7 +4,7 @@ import Footer from "../components/footer";
 // Content
 import Hero from "../components/hero";
 import Support from "../components/support";
-import About from "../components/about";
+import Category from "../components/category";
 import BackToTop from "../components/back-to-top";
 
 function Home() {
@@ -13,7 +13,7 @@ function Home() {
         <Navigation />
         <Hero />
         <Support />
-        <About />
+        <Category />
         <Footer />
         <BackToTop />
     </>
