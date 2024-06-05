@@ -2,23 +2,17 @@ import React from "react";
 
 const footer = () => {
   return (
-    <section>
+    <section className="footer-section">
       <footer
         className="text-center text-lg-start text-white"
-        style={{ backgroundColor: "#929fba" }}
+        // style={{ backgroundColor: "#929fba" }}
       >
         <div className="container p-4 pb-0">
           <section>
             <div className="row">
-              <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 className="text-uppercase mb-4 font-weight-bold">
-                  Company name
-                </h6>
-                <p>
-                  Here you can use rows and columns to organize your footer
-                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit.
-                </p>
+              <div className="content1 col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 className="text-uppercase mb-4 font-weight-bold"></h6>
+                <img src="./assets/logo/WSC.png" className="img-fluid" alt="" />
               </div>
               <hr className="w-100 clearfix d-md-none" />
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">

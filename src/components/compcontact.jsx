@@ -2,7 +2,7 @@ import React from "react";
 
 const compcontact = () => {
   return (
-    <section className="contact-section py-3 py-md-5 py-xl-8">
+    <section id="Contact" className="contact-section py-3 py-md-5 py-xl-8">
       <div className="container">
         <div className="text-center">
           <h2 className="section-heading text-uppercase mb-5 fw-bold">Contact Us</h2>
@@ -87,13 +87,13 @@ const compcontact = () => {
           </div>
           {/* Submit Button */}
           <div class="text-center">
-            <button
-              class="btn btn-xl text-uppercase"
+            <a
+              class="btn btn-action text-uppercase"
               id="submitButton"
               type="submit"
             >
               Send Message
-            </button>
+            </a>
           </div>
         </form>
       </div>

@@ -8,9 +8,8 @@ const support = () => {
                 <h4>Organized By :</h4>
             </div>
             <div className='image'>
-                <img className='img-fluid' src="./assets/img/WEBSITE.png" alt="" />
-                <img className='img-fluid' src="./assets/img/WEBSITE2.png" alt="" />
-                <img className='img-fluid' src="./assets/img/WEBSITE3.png" alt="" />
+                <img className='img-fluid' src="./assets/logo/LogoIYSA.WebP" alt="" />
+                <img className='img-fluid mb-lg-1 mb-3' src="./assets/logo/MahsaLogo.png" alt="" />
             </div>
         </div>
     </section>

@@ -1,14 +1,16 @@
 /* Umum Start */ /* Umum Start */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 :root{
-  --warna-primary: #e903b7;
-  --warna-sekunder: #06091d;
+  --warna-primary: #d92829cc;
+  --warna-sekunder: #212529;
   --warna-tulisan: #fff;
-  --warna-tulisan2: #212529;
-  --font-family: 'Kanit', sans-serif; 
+  --warna-tulisan2: #06091d;
+  --font-family: 'lato', sans-serif; 
 }
 
 body h1, h2, h3, h4, h5, h6, a, p {
-  font-family: 'Kanit', sans-serif !important;
+  font-family: var(--font-family) !important;
   color: var(--warna-tulisan) ;
   text-decoration: none;
 }
@@ -21,12 +23,12 @@ body a:hover {
   color: var(--warna-tulisan2);
 }
 
-.btn {
+/* .btn {
   color: var(--warna-tulisan) !important;
 }
 .btn:hover {
   color: var(--warna-primary) !important;
-}
+} */
 
 .btn-action {
   color: var(--warna-tulisan);
@@ -35,8 +37,8 @@ body a:hover {
 }
 .btn-action:hover {
   box-shadow: 8px 8px var(--warna-primary);
-  background-color: var(--warna-tulisan);
-  color: var(--warna-tulisan2) !important;
+  background-color: var(--warna-sekunder);
+  color: var(--warna-tulisan) !important;
   transition: 0.3s;
   margin-right: 5px;
 }
@@ -148,6 +150,16 @@ select.noStyle {
 
 
 /* Footer Start */ /* Footer Start */
+footer {
+  background-color: var(--warna-sekunder);
+}
+
+.footer-section .row .content1 img{
+  padding: 1rem;
+  background-color: var(--warna-tulisan);
+  border-radius: 10px
+}
+
 /* Footer End */ /* Footer End */
 
           
@@ -211,15 +223,16 @@ select.noStyle {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
-  width: 100%;
+  gap: 1rem;
   margin: auto;
 }
 
 .support-section .wrapper .image img {
-  max-width: 100px;  /* Limit the max width of images */
+  max-width: 50%;  
   height: auto;
   padding: .5rem;
+  background-color: var(--warna-tulisan);
+  border-radius: 10px
 }
 
 @media (min-width: 768px) {
@@ -237,10 +250,15 @@ select.noStyle {
   .support-section .wrapper .image {
     flex: 3;
     justify-content: flex-start;
+    align-items: center;
   }
 
   .support-section .wrapper .image img {
-    max-width: 150px;  /* Adjust the max width for larger screens */
+    max-width: 120px;
+    height: 100%;
+    background-color: var(--warna-tulisan);
+    margin: .2rem;
+    border-radius: 10px
   }
 }
 
@@ -250,15 +268,58 @@ select.noStyle {
 
 /* About Start */ /* About Start */
 .about-section {
-  padding: 100px 25px 75px 25px  ;
+  padding: 75px 25px 75px 25px  ;
   background-color: var(--warna-primary);
   background-position: center;
   background-size: cover;
-  /* height: 100vh; */
 }
 
-.about-section .content-text p{
+
+.about-section .wrapper .title {
+  border-bottom: 3px solid var(--warna-sekunder);
+  background-color: var(--warna-sekunder);
+  border-radius: 10px;
+  margin: 1rem;
+  padding: .8rem;
+}
+
+.about-section .wrapper .content {
+  border: 2px solid var(--warna-sekunder);
+  padding: .8rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.about-section .content .left{
+  text-align: center;
+}
+
+.about-section .content .left img {
+  margin: auto 0;
+  max-width: 50%;
+}
+
+.about-section .content .right {
   text-align: justify;
+  flex: 1;
+}
+
+.about-section .content .right p {
+  font-size: clamp(12px, 0.5rem + 1vw, 16px);
+}
+
+/* Untuk layar kecil, di bawah 768px */
+@media (max-width: 767px) {
+  .about-section .wrapper .content {
+    flex-direction: column;
+  }
+
+  .about-section .content .left img {
+    margin: auto 0;
+    max-width: 90%;
+  }
+  
 }
 
 @media (max-width: 991px){
@@ -276,7 +337,7 @@ select.noStyle {
 /* Category Start */ /* Category Start */
 .category-section {
   padding: 100px 25px 75px 25px;
-  background-color: var(--warna-primary); 
+  background-color: var(--warna-sekunder); 
 }
 
 .category-section .wrapper {
@@ -288,7 +349,7 @@ select.noStyle {
 
 .category-section .box {
   background-color: #06091d40;
-  border: 3px solid var(--warna-sekunder);
+  border: 3px solid var(--warna-primary);
   text-align: center;
   border-radius: 10px;
   flex: 1 1 calc(20% - 1rem); /* Mengatur elemen untuk mengambil 50% dari lebar container dikurangi gap */
@@ -298,7 +359,7 @@ select.noStyle {
 
 .category-section .box i{
   color: var(--warna-tulisan);
-  filter: drop-shadow(10px 7px 5px var(--warna-sekunder));
+  filter: drop-shadow(10px 7px 5px var(--warna-tulisan2));
 }
 
 @media (max-width: 768px) {
@@ -318,7 +379,7 @@ select.noStyle {
   margin: 10px;
 }
 .contact-section .btn{
-  color: var(--warna-tulisan2);
+  color: var(--warna-tulisan);
   background-color: var(--warna-sekunder);
 }
 .contact-section .section-heading {
