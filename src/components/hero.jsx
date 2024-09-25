@@ -20,7 +20,7 @@ const hero = () => {
             href="/"
             className="btn btn-action"
           >
-            Close Registration
+            Coming Soon 2025
           </a>
           <a
             href="https://drive.google.com/file/d/1Hdh2_LSGpUt8rqywdclM3OAeoBP1aUGL/view?usp=sharing"
